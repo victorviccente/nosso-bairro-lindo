@@ -9,9 +9,9 @@ import { ComparadorAntesDepois } from "@/components/base/ComparadorAntesDepois";
 import muroAntes from "@/assets/muro-antes.jpg";
 import muroDepois from "@/assets/muro-depois.jpg";
 
-const titulo = `${MARCA} — o problema do bairro encontra quem resolve`;
+const titulo = `${MARCA} — problemas reais do bairro, soluções reais da comunidade`;
 const descricao =
-  "Um morador fotografa o muro rabiscado. Um grafiteiro do bairro se candidata, consegue a autorização e transforma. O antes e o depois ficam públicos.";
+  "Muro pichado vira mural com um artista do bairro. Entulho vira mutirão de voluntários. E quando o caso é da prefeitura, a Quadra organiza a abertura do chamado no 1746.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
