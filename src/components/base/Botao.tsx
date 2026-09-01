@@ -31,8 +31,8 @@ export const Botao = forwardRef<HTMLButtonElement, BotaoProps>(function Botao(
       ref={ref}
       className={cn(
         "inline-flex items-center justify-center gap-2 rounded-md font-semibold transition-colors disabled:pointer-events-none disabled:opacity-50",
-        variantes[variante],
         tamanhos[tamanho],
+        variantes[variante],
         className,
       )}
       {...props}
