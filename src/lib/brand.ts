@@ -2,4 +2,4 @@
 export const MARCA = "Quadra";
 
 export const MARCA_DESCRICAO =
-  "A Quadra conecta um problema visível do bairro a alguém da própria comunidade que sabe e quer resolver.";
+  "A Quadra liga um problema real do bairro a uma solução real: um talento da própria comunidade, um mutirão de voluntários ou o canal oficial da prefeitura.";
