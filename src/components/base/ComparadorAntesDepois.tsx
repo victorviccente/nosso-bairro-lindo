@@ -37,7 +37,7 @@ export function ComparadorAntesDepois({
   return (
     <div
       ref={areaRef}
-      className="relative w-full touch-none overflow-hidden rounded-lg border border-borda bg-branco select-none"
+      className="@container relative w-full touch-none overflow-hidden rounded-lg border border-borda bg-branco select-none"
       onPointerMove={(e) => {
         if (e.buttons === 1) mover(e.clientX);
       }}
@@ -50,8 +50,7 @@ export function ComparadorAntesDepois({
           alt={`${alt} — antes`}
           width={1024}
           height={768}
-          className="block h-full w-full max-w-none object-cover"
-          style={{ width: areaRef.current?.clientWidth ?? "100%" }}
+          className="block w-[100cqw] max-w-none"
         />
       </div>
 
