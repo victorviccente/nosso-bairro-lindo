@@ -13,8 +13,8 @@ const variantes: Record<Variante, string> = {
 };
 
 const tamanhos: Record<Tamanho, string> = {
-  md: "h-10 px-4 text-15",
-  lg: "h-12 px-6 text-17",
+  md: "h-10 px-4 text-[15px]",
+  lg: "h-12 px-6 text-[17px]",
 };
 
 export interface BotaoProps extends ButtonHTMLAttributes<HTMLButtonElement> {

@@ -2,7 +2,7 @@ import { forwardRef, useId, type InputHTMLAttributes, type TextareaHTMLAttribute
 import { cn } from "@/lib/utils";
 
 const baseCampo =
-  "w-full rounded-md border border-borda bg-branco px-3 py-2 text-15 text-tinta placeholder:text-cinza transition-colors focus:border-azul";
+  "w-full rounded-md border border-borda bg-branco px-3 py-2 text-[15px] text-tinta placeholder:text-cinza transition-colors focus:border-azul";
 
 export interface CampoProps extends InputHTMLAttributes<HTMLInputElement> {
   rotulo: string;
@@ -18,7 +18,7 @@ export const Campo = forwardRef<HTMLInputElement, CampoProps>(function Campo(
   const campoId = id ?? gerado;
   return (
     <div className="flex flex-col gap-1.5">
-      <label htmlFor={campoId} className="text-13 font-semibold text-tinta">
+      <label htmlFor={campoId} className="text-[13px] font-semibold text-tinta">
         {rotulo}
       </label>
       <input
@@ -29,7 +29,7 @@ export const Campo = forwardRef<HTMLInputElement, CampoProps>(function Campo(
         {...props}
       />
       {(ajuda || erro) && (
-        <p id={`${campoId}-ajuda`} className={cn("text-13", erro ? "text-azul-fundo" : "text-cinza")}>
+        <p id={`${campoId}-ajuda`} className={cn("text-[13px]", erro ? "text-azul-fundo" : "text-cinza")}>
           {erro ?? ajuda}
         </p>
       )}
@@ -50,11 +50,11 @@ export const AreaTexto = forwardRef<HTMLTextAreaElement, AreaTextoProps>(functio
   const campoId = id ?? gerado;
   return (
     <div className="flex flex-col gap-1.5">
-      <label htmlFor={campoId} className="text-13 font-semibold text-tinta">
+      <label htmlFor={campoId} className="text-[13px] font-semibold text-tinta">
         {rotulo}
       </label>
       <textarea ref={ref} id={campoId} className={cn(baseCampo, "min-h-24", className)} {...props} />
-      {ajuda && <p className="text-13 text-cinza">{ajuda}</p>}
+      {ajuda && <p className="text-[13px] text-cinza">{ajuda}</p>}
     </div>
   );
 });

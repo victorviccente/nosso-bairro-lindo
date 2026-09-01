@@ -31,7 +31,7 @@ export function ChipStatus({ status, className }: { status: Status; className?: 
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-chip px-3 py-1 text-13 font-semibold",
+        "inline-flex items-center rounded-chip px-3 py-1 text-[13px] font-semibold",
         estilos[status],
         className,
       )}
