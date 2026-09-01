@@ -9,9 +9,9 @@ import { ComparadorAntesDepois } from "@/components/base/ComparadorAntesDepois";
 import muroAntes from "@/assets/muro-antes.jpg";
 import muroDepois from "@/assets/muro-depois.jpg";
 
-const titulo = `${MARCA} — o problema do bairro encontra quem resolve`;
+const titulo = `${MARCA} — problemas reais do bairro, soluções reais da comunidade`;
 const descricao =
-  "Um morador fotografa o muro rabiscado. Um grafiteiro do bairro se candidata, consegue a autorização e transforma. O antes e o depois ficam públicos.";
+  "Muro pichado vira mural com um artista do bairro. Entulho vira mutirão de voluntários. E quando o caso é da prefeitura, a Quadra organiza a abertura do chamado no 1746.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,33 +28,33 @@ export const Route = createFileRoute("/")({
 const passos = [
   {
     numero: "01",
-    titulo: "Alguém fotografa",
-    texto: "Um morador publica o problema com foto e localização. Leva menos de um minuto.",
+    titulo: "Alguém vê e publica",
+    texto: "Muro pichado, entulho, canteiro seco. A pessoa tira a foto, marca o local e diz o que sente.",
   },
   {
     numero: "02",
-    titulo: "Quem resolve se candidata",
-    texto: "Resolvedores verificados do bairro recebem o aviso e dizem como pretendem resolver.",
+    titulo: "A Quadra indica o caminho",
+    texto: "Dependendo do caso, conecta um artista ou voluntário do bairro, ou organiza a abertura do chamado no 1746.",
   },
   {
     numero: "03",
     titulo: "A autorização é confirmada",
-    texto: "Nada começa sem o dono do local autorizar. Um moderador confere antes de liberar.",
+    texto: "Nada começa sem o dono do local, do condomínio ou do órgão responsável autorizar.",
   },
   {
     numero: "04",
-    titulo: "O depois vira portfólio",
-    texto: "A foto final entra no feed do bairro e no perfil público de quem resolveu.",
+    titulo: "O depois fica público",
+    texto: "A transformação entra no feed do bairro e no portfólio de quem resolveu. Todo mundo vê a diferença.",
   },
 ];
 
 const exemplos: { titulo: string; local: string; status: Status; apoios: number }[] = [
-  { titulo: "Muro rabiscado na esquina da Rua Aurora", local: "Rua Aurora, 210", status: "em_andamento", apoios: 34 },
-  { titulo: "Praça tomada por entulho depois da reforma", local: "Praça do Coreto", status: "com_candidato", apoios: 51 },
+  { titulo: "Muro degradado na esquina da Rua Aurora", local: "Rua Aurora, 210", status: "em_andamento", apoios: 34 },
+  { titulo: "Praça do Coreto com entulho após reforma", local: "Praça do Coreto", status: "com_candidato", apoios: 51 },
   { titulo: "Canteiro central morrendo por falta de rega", local: "Av. das Palmeiras", status: "aberto", apoios: 12 },
   { titulo: "Fachada da escola municipal descascando", local: "Rua Nove de Maio, 44", status: "resolvido", apoios: 88 },
   { titulo: "Poste apagado há três semanas", local: "Rua Aurora, 90", status: "encaminhado", apoios: 27 },
-  { titulo: "Ponto de ônibus sem banco e sem cobertura", local: "Av. Central", status: "autorizado", apoios: 19 },
+  { titulo: "Mutirão de limpeza na Av. Central", local: "Av. Central", status: "autorizado", apoios: 43 },
 ];
 
 function Landing() {
